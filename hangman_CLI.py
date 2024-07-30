@@ -85,15 +85,15 @@ def print_stickman(chance):
     return stages[chance]
 
 def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear') # for cmd
 
 def display_game():
     clear_screen()
     stickman = print_stickman(chance)
-    print(random_line)
+   # print(random_line) answer
     print(f"Chances left: {chance}")
     print("Word:", " ".join(listtemp))
-    print("\n" * (20 - len(stickman.splitlines())), end="")  # Adjust spacing to align stickman on the right
+    print("\n" * (20 - len(stickman.splitlines())), end="")
     print("\n".join(stickman.splitlines()))
 
 def give_hint(word):

@@ -1,6 +1,6 @@
 import os
 import random
-
+# commented with ChatGPT
 # Global variables
 chance = 6
 random_line = ''
